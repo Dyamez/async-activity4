@@ -60,7 +60,7 @@ def pascal(n):
                 elif i > 0 and i < length - 1:
                     value = triangle[row_number - 1][i - 1] + \
                         triangle[row_number - 1][i]
-                    row.append()
+                    row.append(value)
                 else:
                     row.append(1)
             triangle.append(row)
@@ -71,3 +71,4 @@ def pascal(n):
 
 
 pascal(2)
+pascal(5)
